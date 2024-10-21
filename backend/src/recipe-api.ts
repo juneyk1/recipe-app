@@ -1,4 +1,4 @@
-const apiKey = "edd6eed4053f4e30af5c9c30721a2c21";
+const apiKey = process.env.API_KEY;
 
 export const searchRecipes = async (searchTerm: string, page:number) => {
     if(!apiKey) {
